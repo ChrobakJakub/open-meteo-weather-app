@@ -7,10 +7,16 @@ A simple Python application that uses the Open-Meteo API to download weather dat
 - a TXT summary,
 - a PNG temperature chart.
 
-## Project goal
 
-This project was created as a small programming/scripting assignment.  
-The application connects to a public API, processes the returned JSON data, and generates useful output files.
+## How it works
+
+1. The application sends an HTTP GET request to the Open-Meteo API.
+2. The API returns weather data in JSON format.
+3. The script extracts current weather data and a 7-day forecast.
+4. The data is processed in Python using pandas.
+5. The application saves the forecast to a CSV file and a text summary.
+6. It also generates a PNG chart showing minimum and maximum temperatures
+   
 
 ## API used
 
